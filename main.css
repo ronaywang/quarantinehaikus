@@ -87,7 +87,7 @@ body {
 }
 
 .button-dark .top .label {
-    color: #F2EEF7;
+    color: #ff306f;
 }
 
 .button:hover .bottom {
@@ -97,12 +97,12 @@ body {
 }
 
 .button:hover .top .label {
-    color: #F7BEC0;
+    color: #DB7093;
 }
 
 .button-border {
     position: absolute;
-    background-color: #ff306f;
+    background-color: #DB7093;
     -webkit-transition: all .25s ease-out;
     -moz-transition: all .25s ease-out;
     -o-transition: all .25s ease-out;
@@ -153,7 +153,7 @@ body {
 
 a {
     text-decoration: none;
-    color: #F7BEC0;
+    color: #DB7093;
 }
 
 
