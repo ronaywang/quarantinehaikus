@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="utf-8">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <!--<link rel="icon" type="image/x-icon" href="favicon.ico">-->
+    <title>haikus for your quarantine</title>
+  </head>
+<body>
+    <div id = "content">
+    <div id = "words"></div>
+    <a href="#" class="button nav-link" id="haikuButton" type="button" onClick="generate()">
+
+        <div class="bottom"></div>
+
+        <div class="top">
+
+        <div class="label">get a new haiku</div>
+          
+              <div class="button-border button-border-left"></div>
+            <div class="button-border button-border-top"></div>
+            <div class="button-border button-border-right"></div>
+              <div class="button-border button-border-bottom"></div>
+
+        </div>
+    </a>
+    <div class = "inspired">inspired by <a href = "https://www.theguardian.com/books/2020/apr/12/poem-constructed-from-emails-during-quarantine-goes-viral">this poem</a></div>
+</div>
+    <script>
+	
+	
+	
+
+	function generate() {
+	
+		var oneS = ["safe", "cure", "well", "hope", "heal", "zoom"];
+		var twoS = ["healthy", "stay home", "crisis", "alone", "take care", "blessings", "issues", "outbreak"];
+		var threeS = ["protocol", "tireless", "pandemic", "solutions", "shortages", "family", "work from home"];
+		var fourS = ["distance learning", "cabin fever", "uncertain times", "hand sanitizer", "toilet paper", "overwhelming"];
+		var fiveS = ["social distancing", "unprecedented", "return to normal", "digital landscape"];
+		
+		var num1=(Math.floor(Math.random()*10) % oneS.length);
+		var num2a=(Math.floor(Math.random()*10) % twoS.length);
+		var num2b=(Math.floor(Math.random()*10) % twoS.length);
+
+		var num3=(Math.floor(Math.random()*10) % threeS.length);
+		var num4=(Math.floor(Math.random()*10) % fourS.length);
+		var num5=(Math.floor(Math.random()*10) % fiveS.length);
+			
+        var words= document.getElementById("words").innerHTML = threeS[num3] + " " + twoS[num2a] + "<br/>" + fourS[num4] + " " + oneS[num1] + "<br/>" + twoS[num2b] + " " + fiveS[num5] ;
+		}	
+        </script>
+</body>
+</html>
